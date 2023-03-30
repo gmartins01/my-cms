@@ -1,0 +1,362 @@
+
+:root {
+    --background: #eceff4;
+    --navbar_background: #e5e9f0;
+    --text: #2e3440;
+    --text_active: #5e81ac;
+    --hover: #81a1c1;
+    --thead-background: #d8dee9;
+    --tr-hover: #e5e9f0;
+    --button-text: #eceff4;
+    --button-normal-bg: #5e81ac;
+    --button-normal-hover: #81a1c1;
+    --button-danger-bg: #bf616a;
+    --button-danger-hover: #d08770;
+    --success-bg: #40a02b;
+    --fail-bg: #bf616a;
+}
+/* Dark theme */
+:root.dark {
+    --background: #2e3440;
+    --navbar_background: #3b4252;
+    --text: #eceff4;
+    --text_active: #bf616a;
+    --hover: #bf616a;
+    --thead-background: #3b4252;
+    --tr-hover: #d8dee9;
+    --button-text: #eceff4;
+    --button-normal-bg: #5e81ac;
+    --button-normal-hover: #81a1c1;
+    --button-danger-bg: #bf616a;
+    --button-danger-hover: #d08770;
+    --success-bg: #40a02b;
+    --fail-bg: #bf616a;
+}
+
+html {
+    scroll-padding-top: 90px;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+/* Navbar */
+.navbar{
+    background-color: var(--navbar_background);
+    color: var(--text);
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.navtitle{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text);
+}
+
+.navtitle:hover {
+    color: var(--hover);
+}
+
+.navtext{
+    font-family: Arial, sans-serif;
+    color: var(--text);
+
+}
+.navtext:hover {
+    color: var(--hover);
+}
+
+
+#me .img-responsive{
+    border-radius: 10%;
+    max-width: 200px;
+    max-height: auto;
+    margin-bottom: 50px;
+    color: var(--text);
+
+}
+
+.img-responsive{
+    margin-top: 25px;
+    border-radius: 10%;
+    max-width: 100px;
+    height: auto;
+    color: var(--text);
+}
+
+.section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--text);
+    padding-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text);
+    padding-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+
+.section-title h2{
+    text-align: center;
+    color: var(--text);
+    padding-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.section-text{
+    text-align: justify;
+    color: var(--text);
+    padding-bottom: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+.main-text{
+    text-align: justify;
+    color: var(--text);
+    margin-top: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    font-size: 20px;
+}
+
+
+
+.table thead{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: var(--thead-background);
+    color: var(--text);
+    font-size: 20px;
+}
+
+.content table tbody tr td .edit, .content table tbody tr .trash {
+    display: inline-flex;
+    text-align: right;
+    text-decoration: none;
+    color: var(--text);
+    padding: 5px 7px;
+    word-wrap: break-word;
+}
+
+td{
+    color: var(--text);
+}
+th{
+    color: var(--text);
+}
+
+tbody tr:hover {
+    background-color: var(--tr-hover);
+}
+
+.actions .trash .edit{
+    font-weight: bold;
+    font-size: 17px; 
+    display: inline-flex;
+    text-align: right;
+    text-decoration: none;
+}
+.actions .trash {
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--button-text);
+    background-color: var(--button-danger-bg);
+}
+.actions .trash:hover {
+    background-color: var(--button-danger-hover);
+
+}
+.actions .edit {
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--button-text);
+    background-color: var(--button-normal-bg);
+}
+.actions .edit:hover {
+    background-color: var(--button-normal-hover);
+}
+
+.icon{
+    max-width: 80px;
+    margin: 25px;
+    height: auto;
+}
+
+.custom-button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    appearance: none;
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: var(--button-text);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+}
+
+/* Button Update */
+.button-update {
+    background-color: var(--button-normal-bg);
+}
+
+.button-update:focus {
+    box-shadow: var(--button-normal-bg) 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, var(--button-normal-bg) 0 -3px 0 inset;
+    color: var(--button-text);
+}
+
+.button-update:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, var(--button-normal-bg) 0 -3px 0 inset;
+  transform: translateY(-2px);
+  color: var(--button-text);
+}
+
+.button-update:active {
+  box-shadow: #2e3440 0 3px 7px inset;
+  transform: translateY(2px);
+  color: var(--button-text);
+}
+
+/* Button Create */
+.button-create {
+  background-color: var(--button-normal-bg);
+}
+
+.button-create:focus {
+  box-shadow: var(--button-normal-bg) 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, var(--button-normal-bg) 0 -3px 0 inset;
+  color: var(--button-text);
+}
+
+.button-create:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, var(--button-normal-bg) 0 -3px 0 inset;
+  transform: translateY(-2px);
+  color: var(--button-text);
+}
+
+.button-create:active {
+  box-shadow: var(--button-normal-bg) 0 3px 7px inset;
+  transform: translateY(2px);
+  color: var(--button-text);
+}
+
+
+/* Button Return */
+.button-cancel {
+  background-color:var(--button-danger-bg);
+}
+
+.button-cancel:focus {
+  box-shadow: var(--button-danger-bg) 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, var(--button-danger-bg) 0 -3px 0 inset;
+  color: var(--button-text);
+}
+
+.button-cancel:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, var(--button-danger-bg) 0 -3px 0 inset;
+  transform: translateY(-2px);
+  color: var(--button-text);
+}
+
+.button-cancel:active {
+  box-shadow: var(--button-danger-bg) 0 3px 7px inset;
+  transform: translateY(2px);
+  color: var(--button-text);
+}
+
+.alert-success {
+    background-color: var(--success-bg);
+    color: var(--button-text);
+    font-weight: bold;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.alert-fail {
+    background-color: var(--fail-bg);
+    color: var(--button-text);
+    font-weight: bold;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+
+.delete .yesno a {
+    border-radius: 15%;
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--button-normal-bg);
+    font-weight: bold;
+    color: var(--button-text);
+    padding: 10px 15px;
+    margin: 15px 10px 15px 0;
+}
+.delete .yesno a:hover {
+    background-color: var(--button-normal-hover);
+}
+
+#theme-toggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--text);
+    font-size: 24px;
+    transition: all 0.3s ease;
+    line-height: 1.7;
+  }
+  
+#theme-toggle:hover {
+    color: var(--hover);
+}
+
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{
+    display: none !important;
+}

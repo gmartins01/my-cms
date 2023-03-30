@@ -1,0 +1,242 @@
+:root {
+    --background: #eceff4;
+    --navbar_background: #e5e9f0;
+    --text: #2e3440;
+    --text_active: #5e81ac;
+    --hoover: #81a1c1
+}
+
+/* Dark theme */
+:root.dark {
+    --background: #2e3440;
+    --navbar_background: #3b4252;
+    --text: #eceff4;
+    --text_active: #bf616a;
+    --hoover: #d08770;
+}
+
+html {
+    scroll-padding-top: 90px;
+}
+
+body{
+    display:grid;
+    grid-template-rows: auto 1fr auto;
+    min-height:100vh;
+    background-color: var(--background);
+}
+
+#wrapper {
+    min-height:100%;
+    position:relative;
+}
+
+#header{
+    background-color: var(--background);
+    color: var(--text);
+    padding-top: 30px;
+}
+
+#main {
+    padding:10px;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+#footer {
+    background-color: var(--navbar_background);
+    color: var(--text);
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.60em, rgba(0, 89, 255, 0.05) 0px 0.60em 1em;
+    width:100%;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+.footer-text{
+    text-align: center;
+    font-weight: bold;
+    color: var(--text_active);
+    padding-top: 10px;
+    
+}
+
+/* General css */
+.main-text{
+    color: var(--text_active);
+    font-weight: bold;
+}
+
+.section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--text);
+    padding-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.section-title h2{
+    text-align: center;
+    color: var(--text);
+    padding-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.section-text{
+    text-align: justify;
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+}
+
+
+/* Navbar */
+.navbar{
+    background-color: var(--navbar_background);
+    color: var(--text);
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.navtitle{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text);
+}
+
+.navtitle:hover {
+    color: var(--text_active);
+}
+
+.navtext{
+    font-family: Arial, sans-serif;
+    color: var(--text);
+
+}
+.navtext:hover {
+    color: var(--text_active);
+}
+
+
+
+/* Me section */
+#me .img-responsive{
+    border-radius: 10%;
+    max-width: 200px;
+    height: auto;
+    color: var(--text);
+}
+
+#me .icon-container {
+    margin-top: 5px;
+    word-spacing: 10px;
+}
+#me .icon{
+    color: var(--text);
+    font-size: 30px;
+}
+
+#me .icon:hover {
+    color: var(--text_active);
+}
+
+
+/* Education section */
+#education .img-responsive{
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+.education-block{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    box-sizing: content-box;
+    padding: 60px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.education-image{
+    padding: 10px;
+}
+.education-title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text);
+    padding: 10px;
+}
+.education-text{
+    font-family: Arial, sans-serif;
+    color: var(--text);
+    padding: 10px;
+}
+
+
+/* Skills section */
+#skills .icon-container {
+    margin-top: 5px;
+    word-spacing: 40px;
+}
+
+#skills .icon{
+    max-width: 80px;
+    margin: 25px;
+    height: auto;
+    border-radius: 10%;
+}
+
+
+/* Contact section*/
+.button {
+    background-color: var(--text_active);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+.button:hover {
+    background-color: var(--hoover);
+}
+
+.alert-success {
+    background-color: #40a02b;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+#theme-toggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--text);
+    font-size: 24px;
+    transition: all 0.3s ease;
+  }
+  
+#theme-toggle:hover {
+    color: var(--hoover);
+}
+
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{
+    display: none !important;
+}
